@@ -9,6 +9,6 @@ for %%A IN (*.wav) do A:\ffmpeg\bin\ffmpeg.exe -i "%%A" -write_id3v1 1 -id3v2_ve
 :: -r:a or -ar 44100 sample rate
 :: -c:a or -ac  set # of audio channels. For output streams it is set by default to # input audio streams
 :: libmp3lame external encoding library within ffmpeg
-:: -q:a 3 transcode at constant quality as opposed to constant bitrate 3 is 19-250 bitrate range kbit/s
+:: -q:a 3 transcode at constant quality as opposed to constant bitrate 3 is 190-250 bitrate range kbit/s
 :: -n skips wav files where mp3 file exists with same name
 :: full documentation at ffmpeg.org/ffmpeg.html
